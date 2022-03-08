@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/@tabler/icons@latest/iconfont/tabler-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/main.js"></script>
+    <title>Health Track</title>
+</head>
+<header>
+    <a href="index.html"><img src="img/logo.svg" /></a>
+    <div id="user">
+        <a href="user.html">
+            <img src="img/userImg.jpg" />
+            <p>Steven Faria</p>
+        </a>
+    </div>
+</header>
+
+<body>
+    <section id="features">
+        <div><i class="ti ti-bike"></i> <a href="exercises.html">Atividade</a></div>
+        <div><i class="ti ti-heartbeat"></i><a href="#">Saúde</a></div>
+        <div><i class="ti ti-calendar-event"></i><a href="#">Rotina</a></div>
+        <div><i class="ti ti-moon-stars"></i><a href="#">Sono</a></div>
+        <div><i class="ti ti-apple"></i><a href="#">Nutrição</a></div>
+        <div><i class="ti ti-bottle"></i><a href="water.html">Hidratação</a></div>
+    </section>
+    <section id="water">
+        <div id="water-data">
+            <h2>Consumo de água durante o dia</h2>
+            <form>
+                <input placeholder="Quantidade de água em ml's" required />
+                <button type="submit">Adicionar</button>
+            </form>
+            <table>
+                <tr>
+                    <th>ml's</th>
+                    <th>Horario</th>
+                </tr>
+                <tr>
+                    <td>250ml</td>
+                    <td>11:36</td>
+                </tr>
+                <tr>
+                    <td>250ml</td>
+                    <td>11:36</td>
+                </tr>
+                <tr>
+                    <td>250ml</td>
+                    <td>11:36</td>
+                </tr>
+                <tr>
+                    <td>250ml</td>
+                    <td>11:36</td>
+                </tr>
+                <tr>
+                    <td>250ml</td>
+                    <td>11:36</td>
+                </tr>
+                <tr>
+                    <td>250ml</td>
+                    <td>11:36</td>
+                </tr>
+            </table>
+        </div>
+        <div id="alarm">
+            <h2>Não se esqueça de se hidratar</h2>
+            <i class="ti ti-alarm"></i>
+            <div id="alarm-inputs">
+                <input min="00" max="23" type="number" onKeyDown="return false" />
+                <p>:</p>
+                <input min="00" max="59" type="number" onKeyDown="return false" />
+            </div>
+            <button>Salvar</button>
+            <h2>Seus Alarmes</h2>
+            <ul>
+                <li>09:00</li>
+                <li>10:00</li>
+                <li>11:30</li>
+                <li>12:20</li>
+                <li>13:10</li>
+            </ul>
+        </div>
+    </section>
+</body>
+
+</html>
